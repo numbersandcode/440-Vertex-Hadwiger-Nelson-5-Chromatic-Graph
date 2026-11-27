@@ -1,6 +1,7 @@
 G440: a 5-chromatic unit-distance graph with 440 vertices
 
 By Erik deNeve
+
 GitHub: numbersandcode
 
 G440 is a set of 440 points in the plane, with an edge between every two points at distance exactly 1 (2,099 edges), that cannot be colored with four colors so that the ends of every edge differ. A proper five-coloring is included in G440.k21 and graph440.json. I found it on 23 November 2026 and certified it the same day with standard tools (kissat, drat-trim, cake_lpr). I found an earlier 440-vertex graph with 2,106 edges on 21 November 2026, and the sevenfold rotationally symmetric 442-vertex graph on 19 November 2026.
