@@ -1,0 +1,48 @@
+Certificate that G440 has no proper 4-colouring
+================================================
+
+Formula   G440_k4.cnf, DIMACS CNF, 1,760 variables, 8,839 clauses
+          sha256 bc323ec4c1dc95753e02b3e2141e136b5471b4c3a939114f2806705309843fae
+          = 440 clauses "vertex v has some colour" + 8,396 clauses "the ends of an edge differ" (2,099 edges x 4
+          colours) + 3 unit clauses 453, 1074, 1391 (vertices 113, 268, 347 of one triangle get colours 0, 1, 2).
+          verify.py rebuilds this formula from the coordinates and compares it clause by clause.
+
+Method    Cube-and-conquer. The formula was split into 3,207 cases (cubes, depth 12). Each case was refuted by
+          the SAT solver kissat; each refutation was converted with drat-trim and checked by cake_lpr, a
+          formally verified proof checker. That the 3,207 cases cover every assignment was checked the same way.
+
+Tools     stock binaries, sha256:
+          kissat 4.0.4   e3ccbf0e29bc3f3ae9b469e6fcbe4cea089f7f431cfd04c37becb9a16b243072
+          drat-trim      176d533a8166117b29414c71dcc101f794e7d7c4b39e0dc7361d281ff94b746a
+          cake_lpr       fc653607a34fe24ef50175bddfbb42c89252db81e335a7e4212f34c5724375ac
+
+Result    final lines of the checking run, 23 November 2026:
+          check: 3207 of 3207 cubes verified (checkers ['cake']), cover ok
+          CERTIFICATE COMPLETE: F (1760 variables, 8839 clauses, sha256 bc323ec4c1dc9575...) is unsatisfiable
+
+Also      Two exhaustive searches with an independent exact graph-colouring solver, one on the graph as listed
+          and one on a renumbered copy on another machine, found no 4-colouring (23 November 2026).
+
+Together with the proper 5-colouring in G440.k21, the chromatic number of G440 is 5.
+
+
+Certificate that G442 has no proper 4-colouring
+================================================
+
+Formula   G442_k4.cnf, DIMACS CNF, 1,768 variables, 8,845 clauses
+          sha256 3a08efa64b90393d11f32ea5d6b390240b67ac086b84f15218562579019a1da5
+          = 442 clauses "vertex v has some colour" + 8,400 clauses "the ends of an edge differ" (2,100 edges x 4
+          colours) + 3 unit clauses 481, 762, 1071 (vertices 120, 190, 267 of one triangle get colours 0, 1, 2).
+
+Method    as above, same tools: 3,044 cases (cubes), each refuted by kissat 4.0.4, converted with drat-trim and
+          checked by cake_lpr; the cover of the cases checked the same way.
+
+Result    final lines of the checking run, 24 November 2026:
+          check: 3044 of 3044 cubes verified (checkers ['cake']), cover ok
+          CERTIFICATE COMPLETE: F (1768 variables, 8845 clauses, sha256 3a08efa64b90393d...) is unsatisfiable
+
+Also      An earlier cube-and-conquer certificate of the same formula (19 November 2026, 3,044 cubes, each checked
+          by cake_lpr) and two exhaustive searches with an independent exact solver agree.
+
+Together with the proper 5-colouring in G442.k21, the chromatic number of G442 is 5.
+
