@@ -1,4 +1,4 @@
-G440: a 5-chromatic unit-distance graph with 440 vertices
+# G440: a 5-chromatic unit-distance graph with 440 vertices
 
 By Erik deNeve
 
