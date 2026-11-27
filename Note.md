@@ -1,6 +1,6 @@
 G440: a 5-chromatic unit-distance graph with 440 vertices
 
-G440 is a set of 440 points in the plane, with an edge between every two points at distance exactly 1 (2,099 edges), that cannot be colored with four colors so that the ends of every edge differ. A proper five-coloring is included. I found it on 23 November 2026 and certified it the same day with standard tools (kissat, drat-trim, cake_lpr). An earlier version of this graph with 440 vertices and 2,106 edges was found 21 November 2026, and the sevenfold rotationally symmetric 442-vertex graph I discovered two days earlier, 19 November 2026.
+G440 is a set of 440 points in the plane, with an edge between every two points at distance exactly 1 (2,099 edges), that cannot be colored with four colors so that the ends of every edge differ. A proper five-coloring is included in G440.k21 and graph440.json. I found it on 23 November 2026 and certified it the same day with standard tools (kissat, drat-trim, cake_lpr). I found an earlier 440-vertex graph with 2,106 edges on 21 November 2026, and the sevenfold rotationally symmetric 442-vertex graph on 19 November 2026.
 
 It stands at the end of a line of constructions inspired by Haugland’s heptagon framework: Haugland (2,131 vertices), Wong (1,501), Sergi Galán (852) and Chandan Shukla (557), whose graph was the starting point for G440. 
 Aubrey de Grey's first 5-chromatic unit-distance graph (2018) and Marijn Heule's computer-checked reductions opened the way for all of them.
