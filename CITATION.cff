@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use these graph data, please cite this dataset."
+type: dataset
+title: "G440: a 5-chromatic unit-distance graph with 440 vertices"
+authors:
+  - family-names: "deNeve"
+    given-names: "Erik"
+    orcid: "https://orcid.org/0009-0006-9546-5717"
+date-released: "2026-11-26"
+url: "https://github.com/numbersandcode/440-Vertex-Hadwiger-Nelson-5-Chromatic-Graph"
+abstract: "Exact coordinates, edge lists, proper five-colorings, and four-coloring CNF formulas for G440 (440 vertices and 2,099 edges) and its sevenfold rotationally symmetric relative G442 (442 vertices and 2,100 edges)."
+keywords:
+  - "Hadwiger-Nelson problem"
+  - "unit-distance graphs"
+  - "graph coloring"
+  - "chromatic number"
+  - "discrete geometry"
